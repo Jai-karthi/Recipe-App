@@ -12,7 +12,7 @@
     "react-redux": "^9.2.0",
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
-    "homepage": "https://Jai-karthi.github.io/Recipe-App.git"
+    "homepage": "https://github.com/Jai-karthi/Recipe-App.git"
   },
   "scripts": {
     "start": "react-scripts start",
