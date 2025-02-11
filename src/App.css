@@ -1,0 +1,159 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Search and Category filter */
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #00408f;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Recipe List */
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.recipe-card {
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  padding: 15px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.recipe-card p {
+  padding: 0 15px;
+  color: #777;
+  font-size: 1rem;
+}
+
+/* Favorites section */
+.favorite-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.favorite-list p {
+  text-align: center;
+  color: #777;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Mobile and tablet optimization */
+@media (max-width: 768px) {
+  .recipe-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipe-card {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  input[type="text"], select {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .recipe-card h3 {
+    font-size: 1rem;
+  }
+
+  .recipe-card p {
+    font-size: 0.9rem;
+  }
+}
